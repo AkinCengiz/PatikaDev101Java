@@ -6,7 +6,6 @@ public class Main {
 	// write your code here
         int matematik, fizik, kimya, turkce, tarih, muzik, toplam = 0;
         double ortalama;
-
         Scanner input = new Scanner(System.in);
         System.out.print("Matematik notunu giriniz : ");
         matematik = input.nextInt();
