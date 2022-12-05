@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChinaZodiak/ChinaZodiak.iml" filepath="$PROJECT_DIR$/ChinaZodiak/ChinaZodiak.iml" />
       <module fileurl="file://$PROJECT_DIR$/PatikaDev101Java.iml" filepath="$PROJECT_DIR$/PatikaDev101Java.iml" />
     </modules>
   </component>
