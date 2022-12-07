@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         Scanner input = new Scanner(System.in);
         int number1,number2;
         int obeb=1,okek=1;
@@ -20,6 +20,6 @@ public class Main {
         }
 
         okek = (number1*number2)/obeb;
-        System.out.println(number1 + " ile "+number2 " sayılarının obebi : "+obeb+" okeki : "+okek);
+        System.out.println(number1 + " ile "+number2 +" sayılarının obebi : "+obeb+" okeki : "+okek);
     }
 }
