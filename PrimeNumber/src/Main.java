@@ -1,31 +1,38 @@
+import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
 
-        boolean isPrime = true;
-        for(int i = 2; i<=100;i++)
+    static boolean isPrime(int number, int i)
+    {
+        if(i == 1)
         {
-            if(i==2 || i==3)
+            return true;
+        }
+        else
+        {
+            if(number % i == 0)
             {
-                System.out.print(i + " ");
-                continue;
+                return false;
             }
-            isPrime = true;
-            for(int j = 2; j <= i/2; j++)
+            else
             {
-                if( i % j == 0)
-                {
-                    isPrime = false;
-                    break;
-                }else
-                {
-                    isPrime = true;
-                    continue;
-                }
+                return isPrime(number,i-1);
             }
-            if(isPrime == true)
-            {
-                System.out.print(i+" ");
-            }
+        }
+
+    }
+    public static void main(String[] args) {
+	// write your code here
+        Scanner input = new Scanner(System.in);
+        System.out.print("Asal mı sorgulaması yapılacak sayıyı giriniz : ");
+        int number = input.nextInt();
+        boolean result = isPrime(number,number/2);
+        if(result)
+        {
+            System.out.print(number+ " asal sayıdır...");
+        }
+        else
+        {
+            System.out.print(number+ " asal sayı değildir...");
         }
     }
 }
